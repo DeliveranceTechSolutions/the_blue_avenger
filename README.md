@@ -1,4 +1,4 @@
-## Updated The Blue Avenger
+## The Blue Avenger
 
 #### Theoretically if you were to use this on an Linkedin account then here are the theoretical procedures and warnings
 # WARNING :warning:
