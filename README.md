@@ -5,8 +5,9 @@
 #### DO NOT make 2 accounts
 
 #### The current chrome version is 93+, if this project does not work then there are two possible reasons:
-## Linkedin has updated their frontend api and there are some busted lxml references.
-## If you have a chromedriver issue, then find out the version of your chrome 
+# Linkedin has updated their frontend api and there are some busted lxml references.
+# If you have a chromedriver issue, then find out the version of your browser and replace the driver in assets.
+# Your browser must match the version of the driver or selenium will not run.
 # (3 dots to the right, settings, About Chrome on the right menu all the way to the bottom) Aug 2021
 
 
