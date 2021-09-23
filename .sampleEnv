@@ -1,0 +1,9 @@
+CHROMEDRIVER_RESOURCE_WINDOWS="C:\\python_portfolio\\automation\\assets\\chromedriver.exe"
+LOGIN_RESOURCE="https://linkedin.com/uas/login"
+HAS_EASY_APPLY="* Has Easy Apply Button"
+NO_EASY_APPLY="* Doesn't Have Easy Apply Button"
+NEXT_JOBS_PAGE="Going to next jobs page !"
+NEXT_JOBS_PAGE_RESOURCE="https://www.linkedin.com/jobs/search/?f_LF=f_AL&keywords="
+
+ENTER_INPUT_ID="//*[starts-with(@id, 'urn:li:fs_easyApplyFormElement:(urn:li:fs_normalized_jobPosting:"
+RADIO_BUTTN_ID="//*[starts-with(@id, 'radio-urn:li:fs_easyApplyFormElement:(urn:li:fs_normalized_jobPosting:"

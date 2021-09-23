@@ -33,7 +33,7 @@ class BlueAvenger:
         self.browser.get(os.getenv("LOGIN_RESOURCE"))
 
     def wait_for_login(self):
-        time.sleep(10)
+        time.sleep(30)
 
     def fill_data(self):
         self.browser.set_window_size(0, 0)
@@ -192,8 +192,8 @@ class BlueAvenger:
         try:
             radio_lock = self.browser.find_elements_by_xpath(os.getenv("RADIO_BUTTN_ID") + job_id[5] + "')]")
             for i in range(len(radio_lock)):    
+                print("RADIO_LOCK: ", radio_lock[i])
                 self.browser.execute_script("arguments[0].click()", radio_lock[i])
-            print("Radio Input: ", radio_lock)
             return True
         except:
             return False
@@ -204,8 +204,8 @@ class BlueAvenger:
             input_lock = self.browser.find_elements_by_xpath(os.getenv("ENTER_INPUT_ID") + job_id[5] + "')]")
             for i in range(len(input_lock)):
                 if self.browser.execute_script("arguments[0].value", input_lock[i]) == "":
+                    print("INPUT_LOCK: ", input_lock[i])
                     input_lock[i].send_keys('3')   
-            print("Text Input: ", input_lock)
             return True
         except:
             return False
