@@ -25,7 +25,7 @@ On top of that, Linkedin FORCES YOU TO APPLY TO THIS STUFF YOURSELF!!!
 
 You already gave them your (or some) personal data, which is extremely valuable human input.  It support a culture of do-nothing-until-you-are-doing-something.
 
-Coding interviews are not bad but it is so time consuming to keep that skill in check.  Experience can help but at the end of the day, companies make the application process so extremely painful so when you think about leaving....you don't 😭
+Coding interviews are not bad but it is so time consuming to keep that skill in check.  Experience can help but at the end of the day, companies make the application process extremely painful so when you think about leaving....you don't 😭
 
 #### Break down the gate!
 
