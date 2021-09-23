@@ -1,3 +1,4 @@
+# extended from https://github.com/phos-tou-kosmou/python_portfolio/blob/python/automation/easyapplybot.py
 import time
 import random
 import selenium
