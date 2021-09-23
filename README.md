@@ -27,11 +27,11 @@ You already gave them your (or some) personal data, which is extremely valuable 
 
 Coding interviews are not bad but it is so time consuming to keep that skill in check.  Experience can help but at the end of the day, companies make the application process so extremely painful so when you think about leaving....you don't 😭
 
-Break down the gate!
+#### Break down the gate!
 
-Slay the dragon!
+### Slay the dragon!
 
-Save the princess!
+## Save the princess!
 
 All with the help of
 # THE BLUE AVENGER!!!!!
