@@ -21,8 +21,3 @@ The current chrome version is 93+, if this project does not work then there are 
 Linkedin amended their policy implementing new verification methods, so leaving the bot running is much more reliable than last year once you verify or log in.
 
 # Leave the window maximized
-
-#### You are not allowed to access the Linkedin services using automation, anything done with this script 
-
-#### will be your responsibility. 
-
