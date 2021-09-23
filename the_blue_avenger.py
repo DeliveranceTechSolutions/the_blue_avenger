@@ -49,7 +49,7 @@ class BlueAvenger:
         print("\nPlease select your curriculum\n")
         time.sleep(1)
         root = Tk()
-        self.resumeloctn = "C:\\Users\\someo\\Downloads\\Resume.pdf"
+        self.resumeloctn = ""
 
         root.destroy()
 
