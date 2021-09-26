@@ -1,3 +1,4 @@
+# extended from https://github.com/phos-tou-kosmou/python_portfolio/blob/python/automation/easyapplybot.py
 import time
 import random
 import selenium
@@ -74,7 +75,7 @@ class BlueAvenger:
         print("\nPlease select your curriculum\n")
         time.sleep(1)
         root = Tk()
-        self.resumeloctn = "C:\\Users\\someo\\Downloads\\Resume.pdf"
+        self.resumeloctn = ""
 
         root.destroy()
 
