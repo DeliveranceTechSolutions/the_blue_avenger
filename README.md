@@ -2,7 +2,10 @@
 #### Apply without Applying!
 #### Only usuable with LinkedIn currently
 #### This will be rewritten in Go and Rust
-[URL=][IMG]http://clipart-library.com/img1/1234786.png[/IMG][/URL]
+![1234786](https://user-images.githubusercontent.com/90012755/134565935-14f2eb0f-2d7b-4602-b888-4a51554174c7.png)
+
+http://clipart-library.com/img1/1234786.png
+
 Change .sampleEnv to .env
 
 #### DO NOT make 2 accounts
