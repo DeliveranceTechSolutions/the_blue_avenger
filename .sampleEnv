@@ -7,3 +7,5 @@ NEXT_JOBS_PAGE_RESOURCE="https://www.linkedin.com/jobs/search/?f_LF=f_AL&keyword
 
 ENTER_INPUT_ID="//*[starts-with(@id, 'urn:li:fs_easyApplyFormElement:(urn:li:fs_normalized_jobPosting:"
 RADIO_BUTTN_ID="//*[starts-with(@id, 'radio-urn:li:fs_easyApplyFormElement:(urn:li:fs_normalized_jobPosting:"
+USER_UNAME = {Fill linkedin username here}
+USER_PNAME = {Fill linkedin password here since we can always run this script locally, use better practices if you you don't like that}

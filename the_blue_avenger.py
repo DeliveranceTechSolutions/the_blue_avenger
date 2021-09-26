@@ -19,6 +19,8 @@ class BlueAvenger:
         self.language = language
         self.options = self.browser_options()
         self.browser = webdriver.Chrome(options=self.options, executable_path=resource)
+        self.positions = []
+        self.position = ""
         self.start_linkedin()
 
     def browser_options(self):
@@ -31,6 +33,27 @@ class BlueAvenger:
 
     def start_linkedin(self):
         self.browser.get(os.getenv("LOGIN_RESOURCE"))
+        user_uname = os.getenv("USER_UNAME")
+        user_pname = os.getenv("USER_PNAME")
+
+        
+        time.sleep(random.uniform(1.2, 2.3))
+        self.browser.execute_script("document.getElementById('password').value = arguments[0]", user_pname)
+        time.sleep(random.uniform(3.5, 4.2))
+        self.browser.execute_script("document.getElementById('username').value = arguments[0]", user_uname)
+        time.sleep(random.uniform(1.2, 1.8))
+        self.browser.execute_script("const a = document.getElementsByClassName('btn__primary--large')[0];a.click()")
+        # submit_button = self.browser.find_element_by_xpath("//*[text()='Sign in']")
+        # print(submit_button)
+        # print(submit_button.click())
+        # self.click_sign_in(submit_button)
+        return
+    
+    def click_sign_in(self, btn):
+        try:
+            btn.click()
+        except:
+            self.click_sign_in(btn)
 
     def wait_for_login(self):
         time.sleep(30)
@@ -40,8 +63,10 @@ class BlueAvenger:
         self.browser.set_window_position(2000, 2000)
         os.system("reset")
 
-        position = input("What jobs would you like to apply for?")
-        self.position = position.replace(" ", "%20")
+        positions = input("What jobs would you like to apply for? Enter multiple keywords for multiple searches, enter keywords as a string seperated as spaces.")
+        keywords = positions.split()
+        for keyword in keywords:
+            self.positions.append(keyword.replace(" ", "%20"))
         location = input("Where are the jobs located? " +
                          "(i.e. Global, Country (United States), State (California), City (San Francisco): ")
         self.location = "&location=" + location.replace(" ", "%20") + "&sortBy=DD"
@@ -56,7 +81,9 @@ class BlueAvenger:
     def start_apply(self):
         self.wait_for_login()
         self.fill_data()
-        self.applications_loop()
+        for i in range(len(self.positions)):
+            self.position = self.positions[i]
+            self.applications_loop()
 
     def applications_loop(self):
         count_application = 0
