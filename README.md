@@ -1,4 +1,5 @@
 ## The Blue Avenger 
+### MAJOR UPDATE: You must have selenium installed through pip using ```python -m pip install selenium``` I always have it installed on my systems so I forgot.  Sorry for the confusion
 #### Apply without Applying!
 #### Only usuable with LinkedIn currently
 #### This will be rewritten in Go and Rust
