@@ -1,5 +1,6 @@
 ## The Blue Avenger 
 ### MAJOR UPDATE: You must have selenium installed through pip using ```python -m pip install selenium``` I always have it installed on my systems so I forgot.  Sorry for the confusion
+#### The Chromium driver needs a download on raspberry pi and I believe on linux/unix systems but you should only need the selenium download and python3 to run it.  Again sorry, if you saw my room you would understand.
 #### Apply without Applying!
 #### Only usuable with LinkedIn currently
 #### This will be rewritten in Go and Rust
