@@ -1,4 +1,4 @@
-CHROMEDRIVER_RESOURCE_WINDOWS="C:\\python_portfolio\\automation\\assets\\chromedriver.exe"
+CHROMEDRIVER_RESOURCE_WINDOWS="C:\\Users\\someo\\the_blue_avenger\\assets\\chromedriver.exe"
 LOGIN_RESOURCE="https://linkedin.com/uas/login"
 HAS_EASY_APPLY="* Has Easy Apply Button"
 NO_EASY_APPLY="* Doesn't Have Easy Apply Button"

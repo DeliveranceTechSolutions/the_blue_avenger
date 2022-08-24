@@ -22,6 +22,7 @@ class BlueAvenger:
         self.browser = webdriver.Chrome(options=self.options, executable_path=resource)
         self.positions = []
         self.position = ""
+        self.counter = 0
         self.start_linkedin()
 
     def browser_options(self):
@@ -169,9 +170,10 @@ class BlueAvenger:
         list_of_words = button_inner_html.split()
         time.sleep(.5)
         next_word = [word for word in list_of_words if "ember" in word and "id" in word]
-        ember = next_word[-1][:-5]
-        xpath = '//*[@'+ember+']'
-        print(xpath)
+        ember = next_word[0].split('>')
+        xpath = '//*[@'+ember[0]+']'
+        self.counter += 1
+        print(self.counter)       
         return xpath
 
     def click_button(self, xpath):
@@ -202,7 +204,6 @@ class BlueAvenger:
         try:
             next_button = self.browser.find_element_by_xpath("//*[text()='Next']")
             next_button.click()
-            print("Next Button: ", next_button)
             return True
         except:
             return False
@@ -211,7 +212,6 @@ class BlueAvenger:
         try:
             review_button = self.browser.find_element_by_xpath("//*[text()='Review']")
             review_button.click()
-            print("Review Button: ", review_button)
             return True
         except:
             return False
@@ -220,7 +220,6 @@ class BlueAvenger:
         try:
             radio_lock = self.browser.find_elements_by_xpath(os.getenv("RADIO_BUTTN_ID") + job_id[5] + "')]")
             for i in range(len(radio_lock)):    
-                print("RADIO_LOCK: ", radio_lock[i])
                 self.browser.execute_script("arguments[0].click()", radio_lock[i])
             return True
         except:
@@ -232,7 +231,6 @@ class BlueAvenger:
             input_lock = self.browser.find_elements_by_xpath(os.getenv("ENTER_INPUT_ID") + job_id[5] + "')]")
             for i in range(len(input_lock)):
                 if self.browser.execute_script("arguments[0].value", input_lock[i]) == "":
-                    print("INPUT_LOCK: ", input_lock[i])
                     input_lock[i].send_keys('3')   
             return True
         except:
