@@ -1,4 +1,4 @@
-# extended from extended from https://github.com/fabricio-aguiar/Easy-Apply-bot
+# extended from https://github.com/fabricio-aguiar/Easy-Apply-bot
 import time
 import random
 import selenium
